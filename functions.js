@@ -1,5 +1,9 @@
+const dia = prompt("Qual o dia do seu aniversário?");
+const mes = prompt("Qual o mes do seu aniversário?");
+const ano = prompt("Qual o ano atual?");
+
 setInterval(() => {
-  const d2 = "2023-02-30";
+  const d2 = `${ano}-${mes}-${dia}`;
   const diffInMs = new Date(d2) - new Date();
   const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
 
